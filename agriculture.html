@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-Tech | IoT in Agriculture</title>
+    <link rel="stylesheet" href="agriculture.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Agri-Tech<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="fade-in">The Future of Farming is Here.</h1>
+                <p class="fade-in">Leveraging the Internet of Things (IoT) to revolutionize agriculture, boost yields, and promote sustainability.</p>
+                <a href="#about" class="cta-button fade-in">Learn More</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2 class="section-title hidden">What is IoT in Agriculture? 🌱</h2>
+            <div class="about-container hidden">
+                <div class="about-text">
+                    <p>IoT in agriculture, often called <strong>Smart Farming</strong> or <strong>Agri-Tech</strong>, involves using sensors, drones, robots, and data analytics to optimize farming practices. By deploying smart sensors in fields, farmers can collect real-time data on soil moisture, nutrient levels, weather conditions, and crop health. This data empowers them to make informed decisions, automate tasks like irrigation, and apply resources exactly when and where they are needed, minimizing waste and maximizing efficiency.</p>
+                </div>
+                <div class="about-image">
+                    
+                    <img src="images/precision-farming.jpg" alt="Sensors in a farm field">
+                </div>
+            </div>
+        </section>
+
+        <section id="applications" class="applications-section">
+            <h2 class="section-title hidden">Key Applications</h2>
+            <div class="app-grid">
+                <div class="app-card hidden">
+                    <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Precision Farming</h3>
+                    <p>Use GPS-guided tractors and drones to apply fertilizers, pesticides, and water with surgical precision, reducing costs and environmental impact.</p>
+                    <img src="images/camera-farming.jpg" alt="Precision Farming Drone">
+                </div>
+                <div class="app-card hidden">
+                    <div class="card-icon"><i class="fas fa-tint"></i></div>
+                    <h3>Smart Irrigation</h3>
+                    <p>Soil moisture sensors trigger irrigation systems automatically, ensuring crops get the exact amount of water needed and conserving up to 50% of water.</p>
+                    <img src="images/smart-irrigation.jpg" alt="Smart Irrigation System">
+                </div>
+                <div class="app-card hidden">
+                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Crop Monitoring</h3>
+                    <p>Drones equipped with multispectral cameras monitor crop health, detect diseases early, and help create accurate yield predictions.</p>
+                     <img src="images/crop-monitoring.jpg" alt="Drone monitoring crops">
+                </div>
+                 <div class="app-card hidden">
+                    <div class="card-icon"><i class="fas fa-paw"></i></div>
+                    <h3>Livestock Tracking</h3>
+                    <p>Wearable sensors on cattle monitor their health, location, and activity levels, enabling early detection of illness and optimizing breeding patterns.</p>
+                    <img src="images/livestock-tracking.jpg" alt="Cow with a smart collar">
+                </div>
+            </div>
+        </section>
+        
+        <section id="benefits" class="content-section">
+            <h2 class="section-title hidden">Core Benefits of Agri-Tech 📈</h2>
+             <div class="benefits-container hidden">
+                <div class="benefit-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Increased Yields</h4>
+                    <p>Optimized resource management leads to healthier crops and significantly higher production.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Resource Conservation</h4>
+                    <p>Precise application of water and chemicals reduces waste and promotes environmental sustainability.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-euro-sign"></i>
+                    <h4>Cost Reduction</h4>
+                    <p>Automation and efficient resource use lower operational costs for fuel, fertilizer, and labor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="data" class="data-section">
+            <h2 class="section-title hidden">The Growth of Smart Farming</h2>
+            <div class="data-container hidden">
+                <div class="data-text">
+                    <p>The global IoT in agriculture market is expanding rapidly. Valued at <strong>$14.79 billion in 2020</strong>, it is projected to reach <strong>$34.1 billion by 2026</strong>, growing at a CAGR of over 15%. This growth is driven by the increasing global demand for food and the need for sustainable farming solutions.</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="agriTechChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Agri-Tech<span>.</span></h3>
+            <p>Pioneering the future of sustainable agriculture through technology.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Agri-Tech. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="agriculture.js"></script>
+</body>
+</html>
